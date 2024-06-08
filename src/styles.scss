@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.cursor-pointer{
+    cursor:pointer !important
+  }
+  .heading{
+    font-size: 28px !important;
+    font-weight: 500 !important;
+    margin: 0 !important;
+  }
+  .ov-auto{
+    overflow: auto;
+    max-height: calc(100vh - 158px);
+    border-bottom: none;
+    border-radius: 6px;
+    min-width: 100%;
+  }
+  tr.mat-mdc-row td.mat-mdc-cell{
+    font-size: 12px;
+    color: #2c2c2c;
+    border-right: 1px solid #d8d8d8;
+  }
+  tr.mat-mdc-row:nth-child(odd){
+    background: #f2f3f6;
+  }
+  tr.mat-mdc-row,tr.mat-mdc-header-row{
+    height: 40px !important;
+  }
+  td.mat-mdc-cell, td.mat-mdc-footer-cell{
+    padding: 0 10px !important;
+  }
+  th.mat-mdc-header-cell{
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    padding: 0px 10px !important;
+  }
+  td.td-more.mat-mdc-cell{
+    width: 100px !important;
+  }
+  .width-min-100{
+    min-width: 100%;
+  }
+  .w-max-content{
+    width: max-content;
+  }
+  
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+   
+  .spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    border-top-color: #000000;
+    animation: spinner .8s linear infinite;
+  }
+
+  .mdc-text-field--filled, .mat-mdc-text-field-wrapper:hover,.mat-mdc-form-field-focus-overlay{
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+  .mat-mdc-form-field-hint-wrapper{
+    padding: 0 !important;
+  }
+  .mat-mdc-form-field-infix{
+    min-height: 40px !important;
+    padding-top: 20px !important;
+    padding-bottom: 2px !important;
+  }
